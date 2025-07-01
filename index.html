@@ -3,69 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Selamat Ulang Tahun, Sayang ✨</title>
+  <title>Happy Birthday, My Star ✨</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: #fdfaf6;
-      color: #333;
-      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #0d0d1d, #1c1c3a);
+      font-family: 'Poppins', sans-serif;
+      color: #eaeaea;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
       text-align: center;
-      padding: 30px;
+      min-height: 100vh;
+      padding: 40px 20px;
+      overflow-x: hidden;
     }
 
     h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Orbitron', sans-serif;
       font-size: 2.8rem;
+      color: #00f7ff;
+      text-shadow: 0 0 10px #00f7ff;
       margin-bottom: 10px;
-      color: #2b2b2b;
     }
 
     h2 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #7a7a7a;
+      font-size: 1rem;
+      color: #cfcfcf;
       margin-bottom: 40px;
+      font-weight: 300;
     }
 
     button {
-      background-color: #333;
-      color: white;
+      background: rgba(0, 247, 255, 0.1);
+      color: #00f7ff;
+      border: 1px solid #00f7ff;
       padding: 12px 28px;
-      border: none;
-      border-radius: 30px;
+      border-radius: 8px;
       font-size: 16px;
-      font-weight: 600;
+      font-family: 'Orbitron', sans-serif;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      backdrop-filter: blur(4px);
     }
 
     button:hover {
-      background-color: #555;
+      background: #00f7ff;
+      color: #0d0d1d;
+      box-shadow: 0 0 12px #00f7ff;
     }
 
     #surat {
+      display: none;
       margin-top: 40px;
       max-width: 600px;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.05);
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 16px;
+      border: 1px solid rgba(0, 247, 255, 0.2);
+      box-shadow: 0 0 15px rgba(0, 247, 255, 0.1);
+      backdrop-filter: blur(8px);
       opacity: 0;
       transform: translateY(30px);
-      transition: opacity 1s ease, transform 1s ease;
-      display: none;
+      transition: all 1s ease;
     }
 
     #surat.tampil {
@@ -74,11 +82,17 @@
       transform: translateY(0);
     }
 
+    #surat p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e0faff;
+    }
+
     .footer {
       position: fixed;
       bottom: 20px;
-      font-size: 0.8rem;
-      color: #aaa;
+      font-size: 0.75rem;
+      color: #777;
     }
 
     audio {
@@ -87,46 +101,48 @@
 
     @media (max-width: 600px) {
       h1 { font-size: 2.2rem; }
-      h2 { font-size: 1rem; }
-      button { font-size: 14px; padding: 10px 22px; }
+      h2 { font-size: 0.95rem; }
+      button { font-size: 13px; padding: 10px 22px; }
     }
   </style>
 </head>
 <body>
 
-  <h1>Selamat Ulang Tahun 💛</h1>
-  <h2>Untuk seseorang yang paling berarti dalam hidupku</h2>
+  <h1>HAPPY BIRTHDAY ✨</h1>
+  <h2>To my brightest star in this galaxy 💫</h2>
 
-  <button onclick="tampilkanSurat()">Buka Kejutan 🎁</button>
+  <button onclick="tampilkanSurat()">Open Transmission 🎁</button>
 
   <audio id="musik" loop>
-    <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg" />
+    <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
     Browser kamu tidak mendukung audio.
   </audio>
 
   <div id="surat">
     <p>
-      Sayangku,<br><br>
-      Hari ini adalah hari spesial karena seseorang yang sangat luar biasa dilahirkan.  
-      Terima kasih telah menjadi cahaya dalam hidupku, penenang dalam gelisahku, dan senyum dalam hariku.  
-      Aku bersyukur untuk setiap detik bersamamu.<br><br>
-      Semoga ulang tahunmu penuh cinta, tawa, dan kedamaian — seperti yang selalu kamu berikan untukku.  
-      Aku mencintaimu, selalu 💛<br><br>
-      - Yang selalu memikirkanmu
+      Dear Love,<br><br>
+      In this timeline of stars and seconds, you are my favorite constant.  
+      Your light brightens my darkest hours, and your presence feels like gravity pulling me home.  
+      On your special day, I wish you more than just happiness — I wish you wonder, joy, and endless love.<br><br>
+      Always orbiting around you,<br>
+      💛 Me
     </p>
   </div>
 
   <div class="footer">
-    Made with 💛 just for you
+    Crafted with 💙 from another dimension
   </div>
 
   <script>
     function tampilkanSurat() {
       const surat = document.getElementById('surat');
       surat.classList.add('tampil');
+
       const musik = document.getElementById('musik');
       musik.volume = 0.5;
-      musik.play().catch(() => {});
+      musik.play().catch(() => {
+        console.log("Autoplay dibatasi browser");
+      });
     }
   </script>
 
