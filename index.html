@@ -107,6 +107,10 @@
 
   <button onclick="tampilkanSurat()">🎁 Klik untuk Kejutan</button>
 
+  <audio id="musik" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg" />
+  </audio>
+
   <div id="surat">
     <p>
       Hai kamu yang paling aku sayang... 💌<br><br>
@@ -124,6 +128,10 @@
       const surat = document.getElementById("surat");
       surat.style.display = "block";
       generateHearts();
+
+      const musik = document.getElementById("musik");
+      musik.volume = 0.3;
+      musik.play().catch(() => {});
     }
 
     function generateHearts() {
